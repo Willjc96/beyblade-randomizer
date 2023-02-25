@@ -30,6 +30,11 @@
   color: white;
 }
 
+.enter-button {
+  width: 30%;
+  align-self: center;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -64,6 +69,14 @@
   height: 100px;
   width: 100px;
   margin-bottom: 10px;
+}
+ .add-beyblade-modal Modal {
+  width: 1000;
+  background: blue;
+}
+.add-beyblade-form {
+  width: 700;
+  background: grey;
 }
 nav {
   background-color: #f2f2f2;

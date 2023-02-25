@@ -112,8 +112,8 @@ function BeybladeParts() {
               <ImportListOfParts />
             </ul>
           </div>
-          <Modal width={700} onOk={onSubmit} onCancel={() => setIsModalVisible(false)} title="Add a new Beyblade part" open={isModalVisible}>
-            <form onSubmit={onSubmit}>
+          <Modal className="add-beyblade-modal" onOk={onSubmit} onCancel={() => setIsModalVisible(false)} title="Add a new Beyblade part" open={isModalVisible}>
+            <form className="add-beyblade-form" onSubmit={onSubmit}>
               <Select style={{ width: 200 }} value={newBeybladePartType} placeholder='Part Type' onChange={(e) => handlePartTypeChange(e)}>
                 {beybladePartTypes.map((beybladePartType) => {
                   return (

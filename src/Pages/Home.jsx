@@ -1,4 +1,4 @@
-import Dragoon from '../Dragoon.png';
+import Dragoon from '../BeybladePartsImages/Dragoon.png';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,10 +10,12 @@ function Home() {
         <h1>
           Beyblade Randomiser
         </h1>
-        <img src={Dragoon} className="App-logo" alt="logo" />
+        <span>
+          <img src={Dragoon} className="App-logo" alt="logo" />
+        </span>
         <p>
         </p>
-        <button onClick={() => navigate('/Main')}>
+        <button className="enter-button" onClick={() => navigate('/Main')}>
           Enter
         </button>
       </header>
