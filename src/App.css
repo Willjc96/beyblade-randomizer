@@ -62,7 +62,8 @@
 }
 .list-of-beyblade-parts .beyblade-part-thumbnail {
   height: 100px;
-  width: 100px
+  width: 100px;
+  margin-bottom: 10px;
 }
 nav {
   background-color: #f2f2f2;
@@ -103,11 +104,19 @@ nav a:hover {
   align-self: left;
 }
 .beyblade-part-card {
-  border: red;
-  border-width: 1px;
+  border: black;
+  background: rgb(49, 56, 67);
+  border-width: 0.5px;
   border-style: solid;
   border-radius: 2rem;
   margin-bottom: 5px;
+}
+.beyblade-part-card-name {
+  margin-bottom: 10px;
+}
+.beyblade-part-card-type {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .create-a-beyblade {
   /* width: 30%; */

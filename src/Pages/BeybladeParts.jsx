@@ -60,10 +60,10 @@ function BeybladeParts() {
         if (beybladePart.type === typeOfPart) {
           return (
             <div className='beyblade-part-card'>
-              <h3>
+              <h3 className='beyblade-part-card-name'>
                 Name: {beybladePart.name}
               </h3>
-              <h4>Type: {beybladePart.type}</h4>
+              <h6 className='beyblade-part-card-type'>Type: {beybladePart.type}</h6>
               <img src={beybladePart.image} className='beyblade-part-thumbnail' />
             </div>
           );
