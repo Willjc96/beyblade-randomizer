@@ -4,7 +4,7 @@ import { Modal, Select, Input } from 'antd';
 import PicUpload from '../Components/PicUpload';
 import SaveListOfParts from '../Components/SaveListOfParts';
 import ImportListOfParts from '../Components/ImportListOfParts';
-
+import { listOfParts } from '../BeybladeParts/ListOfBeybladeParts';
 
 const beybladePartTypes = [{ label: 'Energy Layer', value: 'energyLayer' }, { label: 'Forge Disk', value: 'forgeDisk' }, { label: 'Driver', value: 'driver' }];
 
@@ -20,7 +20,9 @@ function BeybladeParts() {
   const [filter, setFilter] = useState(null);
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem('listOfBeybladeParts'));
+    // const data = JSON.parse(localStorage.getItem('listOfBeybladeParts'));
+    const data = listOfParts;
+
     if (data) {
       setListOfBeybladeParts(data);
     }
@@ -97,7 +99,7 @@ function BeybladeParts() {
                 if (filter === null || filter === beybladePartType.value) {
                   return (
                     <div>
-                      <h5>
+                      <h5 className='beyblade-parts-type-header'>
                         {beybladePartType.label}s
                       </h5>
                       {returnListOfBeybladePartsByType(beybladePartType.label)}

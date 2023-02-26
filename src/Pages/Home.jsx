@@ -1,4 +1,4 @@
-import Dragoon from '../BeybladePartsImages/Dragoon.png';
+import Dragoon from '../BeybladeParts/BeybladePartsImages/Dragoon.png';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 

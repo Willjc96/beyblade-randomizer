@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import Nav from '../Components/Nav';
 import { Radio } from 'antd';
 import CreateABeyblade from './CreateABeyblade';
+import { listOfParts } from '../BeybladeParts/ListOfBeybladeParts';
 
 function CreateABeybladeList() {
-  const listOfBeybladeParts = JSON.parse(localStorage.getItem('listOfBeybladeParts'));
+  // const listOfBeybladeParts = JSON.parse(localStorage.getItem('listOfBeybladeParts'));
+  const listOfBeybladeParts = listOfParts;
+
   const energyLayers = listOfBeybladeParts.filter(part => part.type === 'Energy Layer');
   const forgeDisks = listOfBeybladeParts.filter(part => part.type === 'Forge Disk');
   const drivers = listOfBeybladeParts.filter(part => part.type === 'Driver');
